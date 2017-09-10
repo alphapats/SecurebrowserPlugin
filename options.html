@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure browsing</title>
+  <style>
+    body: { padding: 10px; }
+  </style>
+</head>
+
+<body>
+ 
+<div>
+  <label>
+    <input type="checkbox" id="UAbox">
+Block User Agent in request header </label><br>
+ <label>
+    <input type="checkbox" id="httpsbox">
+Block non https connections  </label><br>
+<label>
+    <input type="checkbox" id="appbox">
+Block all application download  </label><br>
+<label>
+    <input type="checkbox" id="exebox">
+Block only executable downloads </label><br>
+ <label>
+    <input type="checkbox" id="imagebox">
+Block all images </label><br>
+ <label>
+    <input type="checkbox" id="scriptbox">
+Block all scripts </label><br>
+<label>
+    <input type="checkbox" id="blockURLbox">
+Block URLs </label><br>
+</div>
+<div>
+<label>
+    <input type="text" name="new" id="newURL">
+    
+Add URL to block </label><br>
+<label>
+    <input type="text" name="remove" id="removeURL">
+    
+Remove URL from blocking list </label><br>
+</div>
+  <div id="status"></div>
+  
+  <button id="save">Save</button>
+  <br>
+  <div ><b> Current Settings</div>
+   <div id="UAstatus"></div>
+   <div id="httpsstatus"></div>
+    <div id="imagestatus"></div>
+<div id="scriptstatus"></div>
+<div id="appstatus"></div>
+<div id="exestatus"></div>
+<div id="blockURLstatus"></div>
+<div id="listofURL"></div></b>
+  <script src="options.js"></script>
+</body>
+</html>

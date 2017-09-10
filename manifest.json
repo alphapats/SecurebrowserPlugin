@@ -1,0 +1,25 @@
+{
+  "name": "Secure browser",
+  "version": "3.3",
+  "manifest_version": 2,
+  
+  "description": "Control your privacy",
+  
+  "permissions": ["http://*/*", "<all_urls>", "webRequest", "webRequestBlocking", "storage", "privacy"],
+  
+  "icons": {
+    "48": "icons/test.png"
+  },
+  
+"background": {
+      "scripts": [ "block.js" ]
+   },
+
+
+  "options_ui": {
+    // Required.
+    "page": "options.html",
+    // Recommended.
+    "chrome_style": true
+  }
+}
